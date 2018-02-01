@@ -10,8 +10,8 @@
         android:id="@+id/FahrenheitTextView"
         android:layout_width="98dp"
         android:layout_height="34dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="116dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="124dp"
         android:text="@string/fahrenheit"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
@@ -23,8 +23,8 @@
         android:id="@+id/CelsiusTextView"
         android:layout_width="95dp"
         android:layout_height="29dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
         android:text="@string/celsius"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
@@ -34,22 +34,22 @@
 
     <TextView
         android:id="@+id/resultTextview"
-        android:layout_width="118dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="48dp"
+        android:layout_width="145dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
         android:textColor="@color/colorPrimary"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/CelsiusTextView"
-        app:layout_constraintTop_toBottomOf="@+id/EditText" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextView" />
 
     <TextView
         android:id="@+id/DegreetextView"
         android:layout_width="75dp"
         android:layout_height="25dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
         android:text="@string/degree"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp"
@@ -58,15 +58,25 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/EditText"
-        android:layout_width="128dp"
+        android:id="@+id/EditTextView"
+        android:layout_width="94dp"
         android:layout_height="56dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="112dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@color/colorPrimary"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/FahrenheitTextView"
-        app:layout_constraintTop_toBottomOf="@+id/DegreetextView" />
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/ConvertButton"
+        android:layout_width="69dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="116dp"
+        android:text="Enter"
+        app:layout_constraintStart_toEndOf="@+id/EditTextView"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
